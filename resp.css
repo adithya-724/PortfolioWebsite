@@ -506,9 +506,9 @@ footer img:hover {
   height: 500px;
 }
 .dark {
-  width: 47px;
-  height: 47px;
-  background-color: black;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(black, rgba(0, 0, 0, 0.4));
   border-radius: 50%;
   float: left;
   margin: 50px 10px;
@@ -533,7 +533,7 @@ footer img:hover {
   padding: 7px;
 }
 .shift .dark {
-  background-color: white;
+  background: radial-gradient(white, rgba(255, 255, 255, 0.4));
 }
 .shift ul li a:hover {
   font-weight: bold;
