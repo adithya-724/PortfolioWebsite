@@ -21,6 +21,9 @@ body {
   body {
     background-image: url("fin-mobile.jpg");
   }
+  .owl-pic {
+    display: none;
+  }
 
   .menu-container .wrapper {
     background-color: rgba(255, 255, 255, 0.95);
@@ -31,6 +34,13 @@ body {
     float: right;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
+  }
+  .shift .group h1 {
+    font-size: 32px;
+    float: right;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    color: #8aed56;
   }
   .group h2 {
     font-size: 25px;
@@ -77,6 +87,9 @@ body {
   }
   .card #leg {
     font-size: 0.85rem;
+  }
+  .owl {
+    opacity: 0;
   }
 }
 
@@ -129,35 +142,9 @@ ul li a:hover {
   transition: all 1s ease;
   -webkit-filter: drop-shadow(5px 10px 10px #222);
   filter: drop-shadow(5px 10px 10px #222);
-}
-.A {
-  color: #86f3c4;
+  float: left;
 }
 
-.d:hover {
-  color: #86f3c4;
-  cursor: progress;
-}
-.i:hover {
-  color: #e34840;
-  cursor: progress;
-}
-.t:hover {
-  color: #86f3c4;
-  cursor: progress;
-}
-.h:hover {
-  color: #e34840;
-  cursor: progress;
-}
-.y:hover {
-  color: #86f3c4;
-  cursor: progress;
-}
-.a:hover {
-  color: #e34840;
-  cursor: progress;
-}
 .software-pic:hover {
   transform: scale(1.3);
   transform: rotate(92deg);
@@ -502,12 +489,98 @@ footer img:hover {
   transform: scale(1.5);
   transition: 0.4s;
 }
+.owl {
+  float: left;
+  position: relative;
+  left: 200px;
+  top: 40px;
+  z-index: 0;
+}
+.owl-pic {
+  width: 0;
+  height: 0;
+}
+
+.shift .owl-pic {
+  width: 900px;
+  height: 500px;
+}
 .dark {
   width: 47px;
   height: 47px;
   background-color: black;
   border-radius: 50%;
   float: left;
-  margin: 17px;
+  margin: 50px 10px;
   position: fixed;
+  cursor: pointer;
+}
+.shift {
+  background-image: url("owl.jpeg");
+}
+.shift #icon {
+  font-size: 10px;
+  color: black;
+  position: relative;
+  top: 50vh;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.5s ease;
+  display: block;
+  background-color: #8aed56;
+  width: 20px;
+  border-radius: 50%;
+  padding: 7px;
+}
+.shift .dark {
+  background-color: white;
+}
+.shift ul li a:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #8aed56;
+}
+.shift .software-pic {
+  display: none;
+}
+.shift h1 {
+  font-size: 60px;
+  color: #8aed56;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  text-shadow: 2px 1px 10px black;
+}
+.shift button {
+  background-color: #8aed56;
+  color: black;
+}
+.shift button:hover {
+  background-color: #8aed56;
+  box-shadow: 0 0 10px #8aed56, 0 0 20px #8aed56, 0 0 30px #8aed56;
+}
+.shift .one,
+.shift .two,
+.shift .three,
+.shift .four {
+  background-color: #8aed56;
+}
+.shift #about-me-para,
+.shift #intern-para {
+  background-color: rgba(119, 119, 119, 0.45);
+  box-shadow: 10px 0px 5px rgba(119, 119, 119, 0.45);
+}
+.shift .icons-container,
+.shift .intern-container,
+.shift .about-container {
+  background-color: rgba(119, 119, 119, 0.45);
+  box-shadow: 10px 0px 5px rgba(119, 119, 119, 0.45);
+}
+.shift .accordian .card {
+  box-shadow: 0px 0px 20px #d4d4d4;
+}
+.shift footer {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
 }
