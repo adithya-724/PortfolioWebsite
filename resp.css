@@ -16,15 +16,14 @@ body {
   .menu-container .software-pic {
     display: none;
   }
+  .owl {
+    display: none;
+  }
 }
 @media (max-width: 650px) {
   body {
     background-image: url("fin-mobile.jpg");
   }
-  .owl-pic {
-    display: none;
-  }
-
   .menu-container .wrapper {
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 100;
@@ -88,8 +87,8 @@ body {
   .card #leg {
     font-size: 0.85rem;
   }
-  .owl {
-    opacity: 0;
+  .owl-pic {
+    display: none;
   }
 }
 
@@ -492,7 +491,7 @@ footer img:hover {
 .owl {
   float: left;
   position: relative;
-  left: 200px;
+  left: 100px;
   top: 40px;
   z-index: 0;
 }
