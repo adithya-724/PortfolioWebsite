@@ -488,7 +488,7 @@ footer img:hover {
   transform: scale(1.5);
   transition: 0.4s;
 }
-.owl {
+/* .owl {
   float: left;
   position: relative;
   left: 100px;
@@ -503,7 +503,7 @@ footer img:hover {
 .shift .owl-pic {
   width: 900px;
   height: 500px;
-}
+} */
 .dark {
   width: 40px;
   height: 40px;
