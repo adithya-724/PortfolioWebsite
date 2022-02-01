@@ -151,7 +151,7 @@ h2 {
 .btn {
   display: none;
 }
-button {
+.magic-button {
   margin: 50px 100px;
   padding-bottom: 8px;
   padding-top: 5px;
@@ -168,7 +168,7 @@ button {
   font-size: 18px;
   color: white;
 }
-button:hover {
+.magic-button:hover {
   background-color: #aa3737;
   box-shadow: 0 0 10px #aa3737, 0 0 20px #aa3737, 0 0 30px #aa3737;
 }
@@ -317,6 +317,72 @@ button:hover {
 .section-container #projects .project-section {
   width: 70%;
 }
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link a {
+  text-decoration: none;
+  color: #fff;
+}
+.link-button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-top: 35px;
+}
+
+.link-button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+.link-button:hover {
+  cursor: pointer;
+}
+.link-button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.link-button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.link-button:hover span {
+  transform: translateX(5em);
+}
+
+.link-button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 .card .card-header .header-sizing {
   font-size: 30px;
 }
@@ -510,6 +576,12 @@ footer img:hover {
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 100;
   }
+  .one,
+  .two,
+  .three,
+  .four {
+    display: none;
+  }
   .group h1 {
     font-size: 32px;
     float: right;
@@ -560,16 +632,10 @@ footer img:hover {
     position: relative;
     right: 18px;
   }
-  .card #covid {
-    font-size: 0.85rem;
+  .card .card-header .header-sizing {
+    font-size: 20px;
   }
-  .card #robot {
-    font-size: 0.85rem;
-  }
-  .card #leg {
-    font-size: 0.85rem;
-  }
-  .owl-pic {
-    display: none;
+  .link-button {
+    padding: 10px;
   }
 }
