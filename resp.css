@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Staatliches&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Staatliches", cursive;
+  font-family: "Asap Condensed", sans-serif;
 }
 
 body {
@@ -102,7 +103,7 @@ ul li a:hover {
 .wrapper {
   width: 0;
   height: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255, 0.9);
   transition: 0.3s ease;
   border-radius: 1.5%;
   z-index: 10;
@@ -135,9 +136,9 @@ h1 {
   font-size: 60px;
   color: white;
   letter-spacing: 1px;
-  font-family: "Oswald", sans-serif;
   margin: 0;
   text-shadow: 2px 1px 10px black;
+  font-family: "Staatliches", cursive;
 }
 hr {
   width: 400px;
@@ -146,7 +147,6 @@ h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 2.2rem;
   margin-top: 30px;
-  font-family: "Oswald", sans-serif;
 }
 .btn {
   display: none;
@@ -158,7 +158,6 @@ h2 {
   height: 40px;
   width: 80px;
   cursor: pointer;
-  font-family: "Oswald", sans-serif;
   display: flex;
   justify-content: center;
   border-radius: 10%;
@@ -249,23 +248,21 @@ h2 {
 
 #about-me-para {
   margin: 20px auto;
-  font-size: 1.8rem;
-  padding: 20px;
+  font-size: 25px;
+  padding: 40px;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.8);
-  font-family: "Oswald", sans-serif;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
   text-align: justify;
   word-spacing: 2px;
 }
 #intern-para {
-  font-size: 1.8rem;
+  font-size: 25px;
   background-color: rgba(0, 0, 0, 0.65);
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
   width: 80%;
   box-shadow: 10px 0px 5px black;
-  font-family: "Oswald", sans-serif;
   text-align: justify;
   word-spacing: 2px;
 }
@@ -560,7 +557,7 @@ footer img:hover {
   box-shadow: 0px 0px 20px #d4d4d4;
 }
 .shift footer {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
 }
 @media only screen and (max-width: 1500px) {
@@ -636,6 +633,10 @@ footer img:hover {
     font-size: 20px;
   }
   .link-button {
-    padding: 10px;
+    padding: 15px;
+    height: 35px;
+  }
+  .card {
+    width: 100%;
   }
 }
