@@ -13,9 +13,6 @@ body {
   background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
-.shift {
-  background: #000;
-}
 
 .menu-container {
   width: 20%;
@@ -103,7 +100,6 @@ ul li a:hover {
 .wrapper {
   width: 0;
   height: 0;
-  background-color: rgb(255, 255, 255, 0.9);
   transition: 0.3s ease;
   border-radius: 1.5%;
   z-index: 10;
@@ -250,21 +246,23 @@ h2 {
   margin: 20px auto;
   font-size: 25px;
   padding: 40px;
-  width: 80%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
   text-align: justify;
   word-spacing: 2px;
+  border-radius: 10px;
 }
 #intern-para {
   font-size: 25px;
   background-color: rgba(0, 0, 0, 0.65);
   margin: 20px auto;
   padding: 30px;
-  width: 80%;
-  box-shadow: 10px 0px 5px black;
+  width: 90%;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
   text-align: justify;
   word-spacing: 2px;
+  border-radius: 10px;
 }
 .about-me-image {
   margin-top: 10px;
@@ -293,10 +291,9 @@ h2 {
   padding: 40px;
   width: 75%;
   color: white;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 .accordian .card {
-  box-shadow: 0px 0px 20px #d4d4d4;
   margin-bottom: 20px;
   float: left;
   width: 100%;
@@ -308,8 +305,9 @@ h2 {
   margin: 0;
   padding: 20px 5px;
   height: 80px;
-  margin-bottom: 7px;
-  box-shadow: 9px 6px 2px black;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 17px rgba(0, 0, 0, 0.8);
 }
 .section-container #projects .project-section {
   width: 70%;
@@ -446,19 +444,24 @@ h2 {
 .intern-container {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 20px 60px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  padding: 20px;
 }
 .intern-images {
   margin-top: 20px;
 }
 
 hr {
-  color: white;
   margin: 20px auto;
   width: 45%;
 }
 .about-container {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 20px 60px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  padding: 20px;
 }
 footer {
   color: white;
@@ -493,7 +496,15 @@ footer img:hover {
   position: fixed;
   cursor: pointer;
 }
-
+.shift {
+  background: rgb(9, 7, 28);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 7, 28, 1) 37%,
+    rgba(4, 4, 9, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
 .shift #icon {
   font-size: 10px;
   color: black;
@@ -503,62 +514,63 @@ footer img:hover {
   margin-left: 10px;
   transition: 0.5s ease;
   display: block;
-  background-color: #8aed56;
+  background-color: rgba(255, 255, 255, 0.7);
   width: 20px;
   border-radius: 50%;
   padding: 7px;
 }
+
 .shift .dark {
-  background: radial-gradient(white, rgba(255, 255, 255, 0.4));
+  background: radial-gradient(white, grey);
 }
 .shift ul li a:hover {
   font-weight: bold;
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.2);
-  color: #8aed56;
+  color: blue;
 }
 .shift .software-pic {
   display: none;
 }
 .shift h1 {
   font-size: 60px;
-  color: #8aed56;
+  color: white;
   letter-spacing: 1px;
-  font-family: "Oswald", sans-serif;
   margin: 0;
   text-shadow: 2px 1px 10px black;
 }
+.shift h2 {
+  color: rgba(255, 255, 255, 0.6);
+}
 .shift button {
-  background-color: #8aed56;
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
 .shift button:hover {
-  background-color: #8aed56;
-  box-shadow: 0 0 10px #8aed56, 0 0 20px #8aed56, 0 0 30px #8aed56;
+  background-color: royalblue;
+  box-shadow: 0 0 10px royalblue, 0 0 20px royalblue, 0 0 30px royalblue;
 }
 .shift .one,
 .shift .two,
 .shift .three,
 .shift .four {
-  background-color: #8aed56;
+  background-color: blue;
 }
 .shift #about-me-para,
 .shift #intern-para {
-  background-color: rgba(119, 119, 119, 0.45);
-  box-shadow: 10px 0px 5px rgba(119, 119, 119, 0.45);
+  background-color: #05040d;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
 }
 .shift .icons-container,
 .shift .intern-container,
 .shift .about-container {
-  background-color: rgba(119, 119, 119, 0.45);
-  box-shadow: 10px 0px 5px rgba(119, 119, 119, 0.45);
-}
-.shift .accordian .card {
-  box-shadow: 0px 0px 20px #d4d4d4;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 0px 5px #05040d;
+  backdrop-filter: blur(10px);
 }
 .shift footer {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
+  background-color: #0b0c34;
+  color: white;
 }
 @media only screen and (max-width: 1500px) {
   .menu-container .software-pic {
@@ -590,13 +602,14 @@ footer img:hover {
     float: right;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
-    color: #8aed56;
+    color: #fff;
   }
   .group h2 {
     font-size: 25px;
     float: right;
     position: relative;
     left: 60px;
+    color: rgba(255, 255, 255, 0.6);
   }
   .group .a {
     color: white;
