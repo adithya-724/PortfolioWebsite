@@ -7,89 +7,13 @@
 }
 
 body {
-  background-image: url("final.jpg");
+  background-image: url("images/final.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 1500px) {
-  .menu-container .software-pic {
-    display: none;
-  }
-  .owl {
-    display: none;
-  }
-}
-@media (max-width: 650px) {
-  body {
-    background-image: url("fin-mobile.jpg");
-  }
-  .menu-container .wrapper {
-    background-color: rgba(255, 255, 255, 0.95);
-    z-index: 100;
-  }
-  .group h1 {
-    font-size: 32px;
-    float: right;
-    border-bottom: 3px solid white;
-    padding-bottom: 10px;
-  }
-  .shift .group h1 {
-    font-size: 32px;
-    float: right;
-    border-bottom: 3px solid white;
-    padding-bottom: 10px;
-    color: #8aed56;
-  }
-  .group h2 {
-    font-size: 25px;
-    float: right;
-    position: relative;
-    left: 60px;
-  }
-  .group .a {
-    color: white;
-  }
-  .menu-container .software {
-    opacity: 0;
-  }
-  .group button {
-    opacity: 0;
-  }
-  body hr {
-    display: none;
-  }
-  #word-container .group {
-    position: absolute;
-    right: 20vw;
-  }
-  .section-container .intern-container #intern-para {
-    font-size: 1rem;
-  }
-  .section-container #about-me-para {
-    font-size: 1.1rem;
-  }
-  .section-container #projects .project-section {
-    width: 70%;
-  }
-  #accordion .card .card-body {
-    font-size: 1.1rem;
-    width: 115%;
-    position: relative;
-    right: 18px;
-  }
-  .card #covid {
-    font-size: 0.85rem;
-  }
-  .card #robot {
-    font-size: 0.85rem;
-  }
-  .card #leg {
-    font-size: 0.85rem;
-  }
-  .owl-pic {
-    display: none;
-  }
+.shift {
+  background: #000;
 }
 
 .menu-container {
@@ -368,9 +292,9 @@ button:hover {
   justify-content: space-around;
 }
 .icons-container {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 40px;
-  width: 300px;
+  width: 75%;
   color: white;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
 }
@@ -394,7 +318,7 @@ button:hover {
   width: 70%;
 }
 .card .card-header .header-sizing {
-  font-size: 25px;
+  font-size: 30px;
 }
 .card .card-header .span {
   height: 25px;
@@ -428,6 +352,14 @@ button:hover {
   width: 55px !important;
   position: relative;
   top: 15px;
+}
+.js {
+  margin-left: 10px;
+}
+.react,
+.html,
+.css {
+  margin-right: 30px;
 }
 .icons-container span {
   font-weight: bold;
@@ -488,22 +420,6 @@ footer img:hover {
   transform: scale(1.5);
   transition: 0.4s;
 }
-/* .owl {
-  float: left;
-  position: relative;
-  left: 100px;
-  top: 40px;
-  z-index: 0;
-}
-.owl-pic {
-  width: 0;
-  height: 0;
-}
-
-.shift .owl-pic {
-  width: 900px;
-  height: 500px;
-} */
 .dark {
   width: 40px;
   height: 40px;
@@ -514,9 +430,7 @@ footer img:hover {
   position: fixed;
   cursor: pointer;
 }
-.shift {
-  background-image: url("owl.jpeg");
-}
+
 .shift #icon {
   font-size: 10px;
   color: black;
@@ -582,4 +496,80 @@ footer img:hover {
 .shift footer {
   background-color: rgba(255, 255, 255, 0.95);
   color: black;
+}
+@media only screen and (max-width: 1500px) {
+  .menu-container .software-pic {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  body {
+    background-image: url("images/fin-mobile.jpg");
+  }
+  .menu-container .wrapper {
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 100;
+  }
+  .group h1 {
+    font-size: 32px;
+    float: right;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+  }
+  .shift .group h1 {
+    font-size: 32px;
+    float: right;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    color: #8aed56;
+  }
+  .group h2 {
+    font-size: 25px;
+    float: right;
+    position: relative;
+    left: 60px;
+  }
+  .group .a {
+    color: white;
+  }
+  .menu-container .software {
+    opacity: 0;
+  }
+  .group button {
+    opacity: 0;
+  }
+  body hr {
+    display: none;
+  }
+  #word-container .group {
+    position: absolute;
+    right: 20vw;
+  }
+  .section-container .intern-container #intern-para {
+    font-size: 1rem;
+  }
+  .section-container #about-me-para {
+    font-size: 1.1rem;
+  }
+  .section-container #projects .project-section {
+    width: 70%;
+  }
+  #accordion .card .card-body {
+    font-size: 1.1rem;
+    width: 115%;
+    position: relative;
+    right: 18px;
+  }
+  .card #covid {
+    font-size: 0.85rem;
+  }
+  .card #robot {
+    font-size: 0.85rem;
+  }
+  .card #leg {
+    font-size: 0.85rem;
+  }
+  .owl-pic {
+    display: none;
+  }
 }
