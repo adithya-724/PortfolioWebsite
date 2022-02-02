@@ -227,8 +227,10 @@ h2 {
 .section-container {
   margin-top: 150px;
   clear: both;
+  margin: 0 auto;
   text-align: center;
   color: white;
+  width: 60%;
 }
 .section-container section {
   display: flex;
@@ -253,6 +255,7 @@ h2 {
   text-align: justify;
   word-spacing: 2px;
   border-radius: 10px;
+  width: 90%;
 }
 #intern-para {
   font-size: 25px;
@@ -276,6 +279,7 @@ h2 {
   margin-bottom: 40px;
   font-size: 30px;
   margin-top: 50px;
+  font-weight: bold;
   position: relative;
   top: -20px;
 }
@@ -309,9 +313,6 @@ h2 {
   margin-bottom: 10px;
   border-radius: 8px;
   box-shadow: 10px 10px 17px rgba(0, 0, 0, 0.8);
-}
-.section-container #projects .project-section {
-  width: 70%;
 }
 .button-container {
   display: flex;
@@ -504,21 +505,21 @@ footer img:hover {
 }
 .shift #icon {
   font-size: 10px;
-  color: white;
+  color: #15141d;
   position: relative;
   top: 50vh;
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
   display: block;
-  background-color: royalblue;
+  background-color: gray;
   width: 20px;
   border-radius: 50%;
   padding: 7px;
 }
 
 .shift .dark {
-  background: radial-gradient(white, grey);
+  background: gray;
 }
 .shift ul li a:hover {
   font-weight: bold;
@@ -526,9 +527,9 @@ footer img:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: blue;
 }
-.shift .software-pic {
+/* .shift .software-pic {
   display: none;
-}
+} */
 .shift h1 {
   font-size: 60px;
   color: white;
@@ -553,6 +554,9 @@ footer img:hover {
 .shift .four {
   background-color: blue;
 }
+.shift hr {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
 .shift #about-me-para,
 .shift #intern-para {
   background-color: #05040d;
@@ -565,6 +569,7 @@ footer img:hover {
   box-shadow: 10px 0px 5px #05040d;
   backdrop-filter: blur(10px);
 }
+
 .shift footer {
   background-color: #0b0c34;
   color: white;
@@ -623,6 +628,9 @@ footer img:hover {
   #word-container .group {
     position: absolute;
     right: 20vw;
+  }
+  .section-container {
+    width: 95%;
   }
   .section-container .intern-container #intern-para {
     font-size: 1rem;
