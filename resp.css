@@ -81,6 +81,7 @@ ul li a:hover {
   color: rgba(255, 255, 255, 0.8);
   position: relative;
   top: 50vh;
+  z-index: 100;
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
@@ -493,6 +494,7 @@ footer img:hover {
   margin: 50px 10px;
   position: fixed;
   cursor: pointer;
+  z-index: 100;
 }
 .shift {
   background: rgb(9, 7, 28);
@@ -622,6 +624,9 @@ footer img:hover {
   .group button {
     opacity: 0;
   }
+  .intern-container {
+    width: 90%;
+  }
   body hr {
     display: none;
   }
@@ -639,7 +644,7 @@ footer img:hover {
     font-size: 1.1rem;
   }
   .section-container #projects .project-section {
-    width: 70%;
+    width: 90%;
   }
   #accordion .card .card-body {
     font-size: 1.1rem;
