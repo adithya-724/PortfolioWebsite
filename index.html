@@ -1,195 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="resp.css" />
+    <link
+      rel="stylesheet"
+      href="font4/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="resp.css">
-  <link rel="stylesheet" href="font4/css/font-awesome.min.css" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  
-  <title>Resume</title>
-  <style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-  </style>
-</head>
+    <title>Resume</title>
+    <style></style>
+  </head>
 
-<body>
-  <div class="menu-container" id='top'>
-    <div class="dark">
-    </div>
-    <div id="icon-container">
-      <span id='icon' class="material-icons">
-        arrow_forward_ios
-      </span>
-    </div>
-    <div class="wrapper">
-      <nav>
-        <ul>
-          <li><a href="#top">HOME</a></li>
-          <li><a href="#about-me">ABOUT ME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#intern">INTERNS</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="owl pos">
-      <img src="images/anew1.png" alt="" class='software-pic' >
-    </div>
-  </div>
- 
-  <div id='word-container'>
-    <span class='one'></span>
-    <span class='two'></span>
-    <span class=' three'></span>
-    <span class='four'></span>
-
-    <div class="group">
-
-      <h1 >Hello,I'm Adithya </h1>
-      <hr>
-      <h2 >I'm glad to have you here. <br>Do have a look into my world.</h2>
-      <div class="btn" >
-        <button class="magic-button">Magic!</button>
+  <body>
+    <div class="menu-container" id="top">
+      <div class="dark"></div>
+      <div id="icon-container">
+        <span id="icon" class="material-icons"> arrow_forward_ios </span>
+      </div>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="#top">HOME</a></li>
+            <li><a href="#about-me">ABOUT ME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#intern">INTERNS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="owl pos">
+        <img src="images/anew1.png" alt="" class="software-pic" />
       </div>
     </div>
 
-  </div>
- 
-  <br>
-  <br>
-  
+    <div id="word-container">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
 
-  <div class="section-container">
-    <section id="about-me">
-      <h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay='1000' id="aboutme-h3"
-      >About Me</h3>
-      <div class="about-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay=500' >
-      <p id='about-me-para' data-aos="fade-right" data-aos-duration="800" > Hello,I'm an enthusiastic young student trying to find my ways in the world of automation. I'm constantly trying to learn new technologies to keep up with the ever growing and fast paced world we live in. I look forward to being a part of an organisation that has a vision for the future and strives hard to achieve it</p>
+      <div class="group">
+        <h1>Hello,I'm Adithya</h1>
+        <hr />
+        <h2>I'm glad to have you here. <br />Do have a look into my world.</h2>
+        <div class="btn">
+          <button class="magic-button">Magic!</button>
+        </div>
+      </div>
     </div>
-    </section>
-    <hr>
-    <section id='skills'>
-      <div><h3 data-aos="fade-right" data-aos-duration="1000">Skills</h3>
-      </div>
-      <div class="icons-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
-        <div class="flex"> <img src="icons/html-5.png" alt="html-5.png" class="icons html"><span >HTML5</span></div>
-        <div class="flex"><img src="icons/css.png" alt="css.png" class="icons css"><span>CSS3</span></div>
-        <div class="flex"><img src="icons/js.png" alt="javascript.png" class="icons js"><span>JAVASCIPT (ES6)</span></div>
-        <div class="flex"><img src="icons/web.png" alt="web.png" class="icons"><span>WEB DESIGN</span></div>
-        <div class="flex"><img src="icons/react.png" alt="excel.png" class="icons react"><span>REACT</span></div>
-        <div class="flex"><img src="icons/bootstrap.png" alt="sw.png" class="icons"><span>BOOTSTRAP</span></div>
-        <div class="flex"><img src="icons/sass.png" alt="fusion.png" class="icons"><span>SASS</span></div>
-        <div class="flex"><img src="icons/python.png" alt="file.png" class="icons"><span>PYTHON</span></div>
-      </div>
-    </section>
-    <hr>
-    <section id='projects' >
-      <div><h3 data-aos="fade-right" data-aos-duration="1000">Projects</h3>
-      </div>
-      <div class="icons-container project-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" id='accordion' >
-        <div class="card">
-        <div class="flex card-header " > <img src="icons/dogs.png" alt="html-5.png" class="icons"><span class='header-sizing' id='leg'>Doggoys</span><span class="fa fa-minus span"></span></div>
-     
-        <div class='card-body active'>
-          -Designed and updated layouts to meet usability and performance  requirements. <br><br>
-          -Designed fully responsive layouts suitable for smaller and bigger screens.<br><br>
-          -Helped in designing company's logo.
-          <div class="button-container">
-            <button class='link-button' onclick="window.open('https://focused-bartik-87f649.netlify.app/','_blank')" >
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                  </svg>
-                </div>
-              </div>
-              <span>VISIT SITE</span>
-            </button>
+
+    <br />
+    <br />
+
+    <div class="section-container">
+      <section id="about-me">
+        <h3
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="1000"
+          id="aboutme-h3"
+        >
+          About Me
+        </h3>
+        <!-- <div class="about-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay=500' > -->
+        <p id="about-me-para" data-aos="fade-right" data-aos-duration="800">
+          Hello,I'm an enthusiastic young student trying to find my ways in the
+          world of automation. I'm constantly trying to learn new technologies
+          to keep up with the ever growing and fast paced world we live in. I
+          look forward to being a part of an organisation that has a vision for
+          the future and strives hard to achieve it
+        </p>
+        <!-- </div> -->
+      </section>
+      <hr />
+      <section id="skills">
+        <div>
+          <h3 data-aos="fade-right" data-aos-duration="1000">Skills</h3>
+        </div>
+        <div
+          class="icons-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <div class="flex">
+            <img
+              src="icons/html-5.png"
+              alt="html-5.png"
+              class="icons html"
+            /><span>HTML5</span>
           </div>
-        
-        </div>
-      </div>
-      <div class="card">
-        <div class="flex card-header"><img src="icons/cake.png" alt="css.png" class="icons"><span class='header-sizing' id='covid'>Dessert Mood</span><span class="fa fa-plus span"></span></div>
-        <div class='card-body'>-Helped the startup boot up with a fully responsive design layout.<br><br>
-          -Developed user-oriented visuals and features using front-end languages to increase site traffic.<br><br>
-          -Took concepts and produced design mockups and prototypes to strengthen designs and enhance user experiences.
-          <div class="button-container">
-            <button class='link-button' onclick="window.open('https://vigilant-nightingale-cc0d4d.netlify.app/','_blank')" >
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                  </svg>
-                </div>
-              </div>
-              <span>VISIT SITE</span>
-            </button>
-          </div> </div>
-      </div>
-      <div class="card">
-        <div class="flex card-header"><img src="icons/tracker.png" alt="javascript.png" class="icons"><span class='header-sizing' id='robot'>Expense Tracker</span><span class="fa fa-plus span"></span></div>
-        <div class='card-body '>A simple expense tracker app with neomorphic design for tracking all your expenses and visualizing spends across months in a beautiful layout.
-          <div class="button-container">
-            <button class='link-button' onclick="window.open('https://adithya-724.github.io/expense-tracker-react-app/','_blank')" >
-              <div class="svg-wrapper-1">
-                <div class="svg-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                  </svg>
-                </div>
-              </div>
-              <span>VISIT SITE</span>
-            </button>
+          <div class="flex">
+            <img src="icons/css.png" alt="css.png" class="icons css" /><span
+              >CSS3</span
+            >
+          </div>
+          <div class="flex">
+            <img
+              src="icons/js.png"
+              alt="javascript.png"
+              class="icons js"
+            /><span>JAVASCIPT (ES6)</span>
+          </div>
+          <div class="flex">
+            <img src="icons/web.png" alt="web.png" class="icons" /><span
+              >WEB DESIGN</span
+            >
+          </div>
+          <div class="flex">
+            <img
+              src="icons/react.png"
+              alt="excel.png"
+              class="icons react"
+            /><span>REACT</span>
+          </div>
+          <div class="flex">
+            <img src="icons/bootstrap.png" alt="sw.png" class="icons" /><span
+              >BOOTSTRAP</span
+            >
+          </div>
+          <div class="flex">
+            <img src="icons/sass.png" alt="fusion.png" class="icons" /><span
+              >SASS</span
+            >
+          </div>
+          <div class="flex">
+            <img src="icons/python.png" alt="file.png" class="icons" /><span
+              >PYTHON</span
+            >
           </div>
         </div>
+      </section>
+      <hr />
+      <section id="projects">
+        <div>
+          <h3 data-aos="fade-right" data-aos-duration="1000">Projects</h3>
         </div>
-      </div>
-    </section>
-    <hr>
-    <section id='intern'>
-      
-      <div ><h3 data-aos="fade-right" data-aos-duration="1000">Interns</h3></div>
-      <div class='intern-container' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-        <div class="intern-images">
-        <img src="icons/placeholder.png" alt="" id='location'><img src="icons/sutd.jpg" alt="" id='sutd'></div>
-      <p id='intern-para'>I interned at SUTD for a duration of 1 month. It was a great experience into the world of robotics. I was a part of the ship cleaning robot team where we had to build a robot which was able to magnetically attach itself to the hull of the ship and move autonomously and clean it. It was a challenging task and I was a part of the designing team of the robot.</p>
-      </div>
-    </section>
-    
+        <div
+          class="icons-container project-section"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          id="accordion"
+        >
+          <div class="card">
+            <div class="flex card-header">
+              <img src="icons/dogs.png" alt="html-5.png" class="icons" /><span
+                class="header-sizing"
+                id="leg"
+                >Doggoys</span
+              ><span class="fa fa-minus span"></span>
+            </div>
 
-  </div>
-  <footer id='footer'>
-    <div id='footer-text'>CONTACT</div>
-    <div class="footer-flex">
-    <a href="https://www.instagram.com/adithya__724" target="_blank"><img src="icons/insta.png" alt=""></a>
-    <a href="https://www.facebook.com/adithya.madhu.9/" target="_blank"><img src="icons/fb.png" alt=""></a>
-    <a  href="https://www.linkedin.com/in/adithya-madhu-3a98a11b9/" target="_blank"><img src="icons/linkedin.png" alt=""></a>
-  </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-  <script src="resp.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
-  <script>
-    AOS.init();
-  </script>
- 
-  
-   
-</body>
-
+            <div class="card-body active">
+              -Designed and updated layouts to meet usability and performance
+              requirements. <br /><br />
+              -Designed fully responsive layouts suitable for smaller and bigger
+              screens.<br /><br />
+              -Helped in designing company's logo.
+              <div class="button-container">
+                <button
+                  class="link-button"
+                  onclick="window.open('https://focused-bartik-87f649.netlify.app/','_blank')"
+                >
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>VISIT SITE</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex card-header">
+              <img src="icons/cake.png" alt="css.png" class="icons" /><span
+                class="header-sizing"
+                id="covid"
+                >Dessert Mood</span
+              ><span class="fa fa-plus span"></span>
+            </div>
+            <div class="card-body">
+              -Helped the startup boot up with a fully responsive design
+              layout.<br /><br />
+              -Developed user-oriented visuals and features using front-end
+              languages to increase site traffic.<br /><br />
+              -Took concepts and produced design mockups and prototypes to
+              strengthen designs and enhance user experiences.
+              <div class="button-container">
+                <button
+                  class="link-button"
+                  onclick="window.open('https://vigilant-nightingale-cc0d4d.netlify.app/','_blank')"
+                >
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>VISIT SITE</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flex card-header">
+              <img
+                src="icons/tracker.png"
+                alt="javascript.png"
+                class="icons"
+              /><span class="header-sizing" id="robot">Expense Tracker</span
+              ><span class="fa fa-plus span"></span>
+            </div>
+            <div class="card-body">
+              A simple expense tracker app with neomorphic design for tracking
+              all your expenses and visualizing spends across months in a
+              beautiful layout.
+              <div class="button-container">
+                <button
+                  class="link-button"
+                  onclick="window.open('https://adithya-724.github.io/expense-tracker-react-app/','_blank')"
+                >
+                  <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <span>VISIT SITE</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="intern">
+        <div>
+          <h3 data-aos="fade-right" data-aos-duration="1000">Interns</h3>
+        </div>
+        <div
+          class="intern-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <div class="intern-images">
+            <img src="icons/placeholder.png" alt="" id="location" /><img
+              src="icons/sutd.jpg"
+              alt=""
+              id="sutd"
+            />
+          </div>
+          <p id="intern-para">
+            I interned at SUTD for a duration of 1 month. It was a great
+            experience into the world of robotics. I was a part of the ship
+            cleaning robot team where we had to build a robot which was able to
+            magnetically attach itself to the hull of the ship and move
+            autonomously and clean it. It was a challenging task and I was a
+            part of the designing team of the robot.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div id="footer-text">CONTACT</div>
+      <div class="footer-flex">
+        <a href="https://www.instagram.com/adithya__724" target="_blank"
+          ><img src="icons/insta.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com/adithya.madhu.9/" target="_blank"
+          ><img src="icons/fb.png" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/adithya-madhu-3a98a11b9/"
+          target="_blank"
+          ><img src="icons/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="resp.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
