@@ -100,6 +100,7 @@ ul li a:hover {
 .wrapper {
   width: 0;
   height: 0;
+  background-color: rgba(255, 255, 255, 0.95);
   transition: 0.3s ease;
   border-radius: 1.5%;
   z-index: 10;
@@ -364,10 +365,6 @@ h2 {
   transform: translateX(5em);
 }
 
-.link-button:active {
-  transform: scale(0.95);
-}
-
 @keyframes fly-1 {
   from {
     transform: translateY(0.1em);
@@ -507,14 +504,14 @@ footer img:hover {
 }
 .shift #icon {
   font-size: 10px;
-  color: black;
+  color: white;
   position: relative;
   top: 50vh;
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
   display: block;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: royalblue;
   width: 20px;
   border-radius: 50%;
   padding: 7px;
