@@ -596,20 +596,20 @@ footer img:hover {
     display: none;
   }
   .group h1 {
-    font-size: 32px;
+    font-size: 40px;
     float: right;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
   }
   .shift .group h1 {
-    font-size: 32px;
+    font-size: 40px;
     float: right;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
     color: #fff;
   }
   .group h2 {
-    font-size: 25px;
+    font-size: 30px;
     float: right;
     position: relative;
     left: 60px;
