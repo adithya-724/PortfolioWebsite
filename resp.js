@@ -16,10 +16,10 @@ $(document).ready(function () {
 function timing() {
   setTimeout(function () {
     $(".group").fadeIn("slow");
-  }, 1000);
+  }, 500);
   setTimeout(function () {
     $(".btn").fadeIn("slow");
-  }, 2000);
+  }, 600);
   setTimeout(function () {
     $("#icon-container").fadeIn("slow", "linear", function () {
       $("#icon").animate(
@@ -30,7 +30,7 @@ function timing() {
         "slow"
       );
     });
-  }, 3000);
+  }, 900);
 }
 
 //smooth-scroll
