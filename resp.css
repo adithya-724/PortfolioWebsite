@@ -13,7 +13,37 @@ body {
   background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
-
+.header {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1000;
+}
+.header ul {
+  height: 50px;
+}
+.header ul li {
+  transition: all 0.4s ease;
+}
+.header ul li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.header ul li a {
+  color: white;
+  text-decoration: none;
+}
+.flex-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .main-container {
   height: 75vh;
   display: flex;
@@ -40,7 +70,7 @@ ul li {
   margin: 40px;
 }
 
-ul li a {
+.link li .link-tag {
   display: inline-block;
   text-decoration: none;
   color: black;
@@ -49,7 +79,7 @@ ul li a {
   transition: 0.2s ease;
 }
 
-ul li a:hover {
+ul li .link-tag:hover {
   font-weight: bold;
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.2);
@@ -77,10 +107,10 @@ ul li a:hover {
   transform: rotate(92deg);
 }
 #icon-container {
-  display: none;
   width: 280px;
   position: fixed;
   z-index: 120;
+  display: none !important;
 }
 #icon {
   font-size: 10px;
@@ -113,6 +143,7 @@ ul li a:hover {
   z-index: 10;
   position: fixed;
   top: 20vh;
+  display: none;
 }
 .bg {
   width: 300px;
@@ -513,6 +544,7 @@ footer img:hover {
   );
 }
 .shift #icon {
+  /* display: none; */
   font-size: 10px;
   color: #15141d;
   position: relative;
@@ -530,7 +562,7 @@ footer img:hover {
 .shift .dark {
   background: gray;
 }
-.shift ul li a:hover {
+.shift .link li .link-tag:hover {
   font-weight: bold;
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.2);
@@ -594,6 +626,15 @@ footer img:hover {
   .menu-container .wrapper {
     background-color: rgba(255, 255, 255, 0.95);
     z-index: 100;
+  }
+  .header {
+    display: none;
+  }
+  #icon-container {
+    display: block !important;
+  }
+  .wrapper {
+    display: block !important;
   }
   .one,
   .two,
