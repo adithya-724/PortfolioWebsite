@@ -14,10 +14,16 @@ body {
   scroll-behavior: smooth;
 }
 
+.main-container {
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .menu-container {
   width: 20%;
   height: 650px;
-  float: left;
+  /* float: left; */
 }
 nav {
   display: none;
@@ -55,15 +61,15 @@ ul li a:hover {
 }
 .software-pic {
   position: relative;
-  top: 50px;
-  left: 160px;
+  top: 130px;
+  left: 200px;
   width: 400px;
   height: 500px;
   transform: rotate(2deg);
   transition: all 1s ease;
   -webkit-filter: drop-shadow(5px 10px 10px #222);
   filter: drop-shadow(5px 10px 10px #222);
-  float: left;
+  /* float: left; */
 }
 
 .software-pic:hover {
@@ -114,11 +120,11 @@ ul li a:hover {
   transform: translate(-1%);
 }
 #word-container {
-  float: right;
+  /* float: right; */
   width: 80%;
-  height: 500px;
-  padding: 100px;
-  margin-top: 100px;
+  height: 550px;
+  padding: 120px;
+  margin-top: 160px;
   overflow: hidden;
 }
 .group {
@@ -131,7 +137,7 @@ ul li a:hover {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 90px;
   color: white;
   letter-spacing: 1px;
   margin: 0;
@@ -143,7 +149,7 @@ hr {
 }
 h2 {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 2.2rem;
+  font-size: 40px;
   margin-top: 30px;
 }
 .btn {
@@ -158,6 +164,7 @@ h2 {
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 10%;
   border: none;
   background-color: #aa3737;
@@ -175,7 +182,7 @@ h2 {
   height: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
-  top: -120px;
+  top: -140px;
   left: 50%;
   transition: 1s ease;
 }
@@ -196,7 +203,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   left: 90%;
-  top: -120px;
+  top: -140px;
   transition: 1s ease;
 }
 .four {
@@ -533,7 +540,6 @@ footer img:hover {
   display: none;
 } */
 .shift h1 {
-  font-size: 60px;
   color: white;
   letter-spacing: 1px;
   margin: 0;
@@ -581,7 +587,7 @@ footer img:hover {
     display: none;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   body {
     background-image: url("images/fin-mobile.jpg");
   }
@@ -594,6 +600,9 @@ footer img:hover {
   .three,
   .four {
     display: none;
+  }
+  .main-container {
+    height: 70vh;
   }
   .group h1 {
     font-size: 40px;
