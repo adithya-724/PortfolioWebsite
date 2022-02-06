@@ -131,7 +131,7 @@ ul li .link-tag:hover {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.8);
   position: relative;
-  top: 37vh;
+  top: 40vh;
   z-index: 100;
   cursor: pointer;
   margin-left: 10px;
@@ -690,21 +690,21 @@ footer i:hover {
     overflow: visible;
   }
   .group h1 {
-    width: 50vw !important;
-    font-size: 40px;
+    width: 80vw !important;
+    font-size: 35px;
     float: none;
-    width: 100%;
-    border-bottom: 3px solid white;
-    padding-bottom: 10px;
+  }
+  .group {
+    position: relative;
+    right: 40px;
   }
   .shift .group h1 {
     width: 50vw;
-    font-size: 40px;
+    font-size: 35px;
     float: none;
-    padding-bottom: 10px;
   }
   .group h2 {
-    width: 80vw;
+    width: 65vw;
     font-size: 30px;
     float: none;
     position: relative;
@@ -761,6 +761,6 @@ footer i:hover {
     align-items: center;
   }
   .dark {
-    top: 2vh;
+    top: 1vh;
   }
 }
