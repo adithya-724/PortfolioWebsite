@@ -16,10 +16,10 @@ $(document).ready(function () {
 function timing() {
   setTimeout(function () {
     $(".group").fadeIn("slow");
-  }, 500);
+  }, 900);
   setTimeout(function () {
     $(".btn").fadeIn("slow");
-  }, 600);
+  }, 850);
   setTimeout(function () {
     $("#icon-container").fadeIn("slow", "linear", function () {
       $("#icon").animate(

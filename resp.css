@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,15 @@ body {
   background-repeat: no-repeat;
   scroll-behavior: smooth;
 }
+#home-nav,
+#skills-nav,
+#about-nav,
+#projects-nav,
+#intern-nav {
+  display: none;
+}
 .header {
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -45,7 +54,7 @@ body {
   align-items: center;
 }
 .main-container {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -101,7 +110,11 @@ ul li .link-tag:hover {
   filter: drop-shadow(5px 10px 10px #222);
   /* float: left; */
 }
-
+.letter:hover {
+  transform: rotate(20deg);
+  color: #aa3737;
+  transition: all 1s ease;
+}
 .software-pic:hover {
   transform: scale(1.3);
   transform: rotate(92deg);
@@ -153,7 +166,7 @@ ul li .link-tag:hover {
 #word-container {
   /* float: right; */
   width: 80%;
-  height: 550px;
+  height: 600px;
   padding: 120px;
   margin-top: 160px;
   overflow: hidden;
@@ -173,7 +186,7 @@ h1 {
   letter-spacing: 1px;
   margin: 0;
   text-shadow: 2px 1px 10px black;
-  font-family: "Staatliches", cursive;
+  font-family: "Quicksand", sans-serif;
 }
 hr {
   width: 400px;
@@ -502,25 +515,39 @@ hr {
 }
 footer {
   color: white;
-  height: 200px;
   background-color: black;
+  padding: 30px;
 }
 .footer-flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px;
 }
 #footer-text {
   padding: 10px;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  text-decoration: underline;
+  margin-bottom: 20px;
 }
-footer img:hover {
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 20px;
+}
+.contact-info i {
+  margin-right: 10px;
+}
+.contact-icons a i {
+  color: #fff;
+  font-size: 30px;
+  margin: 20px;
+}
+footer i:hover {
   cursor: pointer;
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.4s;
 }
 .dark {
@@ -558,7 +585,9 @@ footer img:hover {
   border-radius: 50%;
   padding: 7px;
 }
-
+.shift .letter:hover {
+  color: royalblue;
+}
 .shift .dark {
   background: gray;
 }
@@ -568,9 +597,9 @@ footer img:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: blue;
 }
-/* .shift .software-pic {
-  display: none;
-} */
+.shift header {
+  box-shadow: 7px 7px 15px rgba(255, 255, 255, 0.1);
+}
 .shift h1 {
   color: white;
   letter-spacing: 1px;
@@ -650,6 +679,7 @@ footer img:hover {
     float: right;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
+    margin-right: 40px;
   }
   .shift .group h1 {
     font-size: 40px;
@@ -711,5 +741,11 @@ footer img:hover {
   }
   .card {
     width: 100%;
+  }
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
