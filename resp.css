@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,10 @@
   box-sizing: border-box;
   font-family: "Asap Condensed", sans-serif;
 }
-
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-image: url("images/final.jpg");
   background-size: cover;
@@ -40,7 +44,7 @@ body {
 .header ul li {
   transition: all 0.4s ease;
 }
-.header ul li:hover {
+.header ul li a:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -56,13 +60,12 @@ body {
 .main-container {
   height: 80vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .menu-container {
-  width: 20%;
+  flex-basis: 20%;
   height: 650px;
-  /* float: left; */
 }
 nav {
   display: none;
@@ -108,7 +111,6 @@ ul li .link-tag:hover {
   transition: all 1s ease;
   -webkit-filter: drop-shadow(5px 10px 10px #222);
   filter: drop-shadow(5px 10px 10px #222);
-  /* float: left; */
 }
 .letter:hover {
   transform: rotate(20deg);
@@ -164,12 +166,11 @@ ul li .link-tag:hover {
   transform: translate(-1%);
 }
 #word-container {
-  /* float: right; */
-  width: 80%;
-  height: 600px;
+  flex-basis: 80%;
+  height: 620px;
   padding: 120px;
   margin-top: 160px;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .group {
   margin-top: 40px;
@@ -178,6 +179,7 @@ ul li .link-tag:hover {
   z-index: 1;
   float: right;
   margin: 0 auto;
+  /* width: 100%; */
 }
 
 h1 {
@@ -261,7 +263,7 @@ h2 {
   transition: 1s ease;
 }
 .one.animations {
-  height: 40px;
+  height: 50px;
   top: 120%;
 }
 .two.animations {
@@ -558,6 +560,7 @@ footer i:hover {
   float: left;
   margin: 50px 10px;
   position: fixed;
+  top: 70px;
   cursor: pointer;
   z-index: 100;
 }
@@ -643,8 +646,17 @@ footer i:hover {
   background-color: #0b0c34;
   color: white;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   .menu-container .software-pic {
+    display: none;
+  }
+  .one,
+  .two,
+  .three,
+  .four {
+    display: none;
+  }
+  .magic-button {
     display: none;
   }
 }
@@ -674,35 +686,38 @@ footer i:hover {
   .main-container {
     height: 70vh;
   }
+  #word-container {
+    overflow: visible;
+  }
   .group h1 {
+    width: 50vw !important;
     font-size: 40px;
-    float: right;
+    float: none;
+    width: 100%;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
-    margin-right: 12%;
   }
   .shift .group h1 {
+    width: 50vw;
     font-size: 40px;
-    float: right;
-    border-bottom: 3px solid white;
+    float: none;
     padding-bottom: 10px;
-    /* color: #fff; */
   }
   .group h2 {
+    width: 80vw;
     font-size: 30px;
-    float: right;
+    float: none;
     position: relative;
-    left: 60px;
     color: rgba(255, 255, 255, 0.6);
   }
   .group .a {
     color: white;
   }
   .menu-container .software {
-    opacity: 0;
+    display: none;
   }
   .group button {
-    opacity: 0;
+    display: none;
   }
   .intern-container {
     width: 90%;
@@ -710,10 +725,7 @@ footer i:hover {
   body hr {
     display: none;
   }
-  #word-container .group {
-    position: absolute;
-    right: 20vw;
-  }
+
   .section-container {
     width: 95%;
   }
@@ -747,5 +759,8 @@ footer i:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+  .dark {
+    top: 2vh;
   }
 }
