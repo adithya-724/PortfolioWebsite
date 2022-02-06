@@ -690,8 +690,8 @@ footer i:hover {
     overflow: visible;
   }
   .group h1 {
-    width: 80vw !important;
-    font-size: 35px;
+    width: 70vw !important;
+    font-size: 40px;
     float: none;
   }
   .group {
@@ -699,12 +699,12 @@ footer i:hover {
     right: 40px;
   }
   .shift .group h1 {
-    width: 50vw;
-    font-size: 35px;
+    width: 70vw;
+    font-size: 40px;
     float: none;
   }
   .group h2 {
-    width: 65vw;
+    width: 70vw;
     font-size: 30px;
     float: none;
     position: relative;
