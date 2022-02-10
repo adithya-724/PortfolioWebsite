@@ -1,3 +1,5 @@
+// mobile-device navigation
+
 $("#icon-container").click(function () {
   $("#icon").toggleClass("rotate");
   $("nav").toggleClass("display");
@@ -32,7 +34,29 @@ function timing() {
     });
   }, 900);
 }
+// scroll effect on header
 
+const body = document.body;
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains("scroll-down")
+  ) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
+  }
+  lastScroll = currentScroll;
+});
 //smooth-scroll
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

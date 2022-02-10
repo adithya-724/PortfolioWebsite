@@ -37,15 +37,12 @@ body {
   left: 0;
   background-color: black;
   z-index: 1000;
+  transition: all 0.5s ease-in;
 }
 .header ul {
   height: 50px;
 }
-.header ul li {
-  transition: all 0.4s ease;
-}
 .header ul li a:hover {
-  transform: scale(1.2);
   cursor: pointer;
 }
 .header ul li a {
@@ -57,8 +54,15 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .header {
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.2);
+}
 .main-container {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +107,7 @@ ul li .link-tag:hover {
 }
 .software-pic {
   position: relative;
-  top: 130px;
+  top: 2vh;
   left: 200px;
   width: 400px;
   height: 500px;
@@ -167,9 +171,9 @@ ul li .link-tag:hover {
 }
 #word-container {
   flex-basis: 80%;
-  height: 620px;
+  height: 80%;
   padding: 120px;
-  margin-top: 160px;
+  margin-top: 60px;
   overflow-y: hidden;
 }
 .group {
@@ -228,7 +232,7 @@ h2 {
   height: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
-  top: -140px;
+  top: -145px;
   left: 50%;
   transition: 1s ease;
 }
@@ -249,7 +253,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   left: 90%;
-  top: -140px;
+  top: -145px;
   transition: 1s ease;
 }
 .four {
@@ -264,19 +268,19 @@ h2 {
 }
 .one.animations {
   height: 50px;
-  top: 120%;
+  top: 113%;
 }
 .two.animations {
   height: 50px;
-  top: -40%;
+  top: -22%;
 }
 .three.animations {
   height: 50px;
-  top: 120%;
+  top: 113%;
 }
 .four.animations {
   height: 50px;
-  top: -40%;
+  top: -22%;
 }
 .section-container {
   margin-top: 150px;
@@ -578,7 +582,7 @@ footer i:hover {
   font-size: 10px;
   color: #15141d;
   position: relative;
-  top: 37vh;
+  top: 40vh;
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
@@ -646,10 +650,7 @@ footer i:hover {
   background-color: #0b0c34;
   color: white;
 }
-@media only screen and (max-width: 1200px) {
-  .menu-container .software-pic {
-    display: none;
-  }
+@media only screen and (max-width: 1400px) {
   .one,
   .two,
   .three,
@@ -657,6 +658,11 @@ footer i:hover {
     display: none;
   }
   .magic-button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .menu-container .software-pic {
     display: none;
   }
 }
