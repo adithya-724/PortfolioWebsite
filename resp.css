@@ -315,6 +315,11 @@ h2 {
   border-radius: 10px;
   width: 90%;
 }
+.quote {
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
 #intern-para {
   font-size: 25px;
   background-color: rgba(0, 0, 0, 0.65);
@@ -335,7 +340,7 @@ h2 {
 }
 .section-container h3 {
   margin-bottom: 40px;
-  font-size: 30px;
+  font-size: 35px;
   margin-top: 50px;
   font-weight: bold;
   position: relative;
@@ -448,7 +453,7 @@ h2 {
   font-size: 13px;
 }
 .card-body {
-  font-size: 1.7rem;
+  font-size: 25px;
   padding: 30px;
   margin-bottom: 10px;
   text-align: justify;
@@ -731,7 +736,9 @@ footer i:hover {
   body hr {
     display: none;
   }
-
+  .quote {
+    font-size: 1.5rem;
+  }
   .section-container {
     width: 95%;
   }
