@@ -311,6 +311,7 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
   text-align: justify;
+  line-height: 25px;
   word-spacing: 2px;
   border-radius: 10px;
   width: 90%;
@@ -329,6 +330,7 @@ h2 {
   box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
   text-align: justify;
   word-spacing: 2px;
+  line-height: 25px;
   border-radius: 10px;
 }
 .about-me-image {
