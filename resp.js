@@ -1,6 +1,6 @@
 // mobile-device navigation
 
-$("#icon-container").click(function () {
+$("#icon").click(function () {
   $("#icon").toggleClass("rotate");
   $("nav").toggleClass("display");
   $(".wrapper").toggleClass("bg");
