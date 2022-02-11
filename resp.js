@@ -6,12 +6,6 @@ $("#icon-container").click(function () {
   $(".wrapper").toggleClass("bg");
 });
 
-$("button").click(function () {
-  $(".one").toggleClass("animations");
-  $(".two").toggleClass("animations");
-  $(".three").toggleClass("animations");
-  $(".four").toggleClass("animations");
-});
 $(document).ready(function () {
   timing();
 });
