@@ -29,7 +29,7 @@ body {
 .header {
   box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   position: fixed;
   padding: 10px;
@@ -105,8 +105,8 @@ ul li .link-tag:hover {
 }
 .software-pic {
   margin-bottom: 120px;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 400px;
   transition: all 1s ease;
   -webkit-filter: drop-shadow(5px 10px 10px #222);
   filter: drop-shadow(5px 10px 10px #222);
