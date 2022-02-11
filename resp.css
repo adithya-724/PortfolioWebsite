@@ -619,7 +619,7 @@ footer i:hover {
   background-color: #0b0c34;
   color: white;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   #word-container .software-pic {
     display: none;
   }
@@ -669,6 +669,10 @@ footer i:hover {
   }
   .group .a {
     color: white;
+  }
+  .magic-button {
+    transform: translateX(-20%);
+    margin-top: 40px;
   }
   .menu-container .software {
     display: none;
