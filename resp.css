@@ -64,6 +64,7 @@ body {
 }
 .main-container {
   height: 100vh;
+  padding-top: 80px;
 }
 nav {
   display: none;
