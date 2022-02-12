@@ -14,7 +14,7 @@ body {
   font-family: "Asap Condensed", sans-serif;
 }
 body {
-  background-image: url("images/final.jpg");
+  background: linear-gradient(to right, #fde4cf, #ffcfd2);
   background-size: cover;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
@@ -78,14 +78,14 @@ ul li {
   line-height: 50px;
   text-align: center;
   padding: 10px;
-  margin: 40px;
+  margin: 30px;
 }
 
 .link li .link-tag {
   display: inline-block;
   text-decoration: none;
   color: black;
-  font-size: 1.6rem;
+  font-size: 2rem;
   width: 150px;
   transition: 0.2s ease;
 }
@@ -95,6 +95,7 @@ ul li .link-tag:hover {
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.2);
   color: #434952;
+  border-radius: 10px;
 }
 .pos {
   flex-basis: 50%;
@@ -184,15 +185,14 @@ ul li .link-tag:hover {
 h1 {
   font-size: 6rem;
   font-weight: bold;
-  color: white;
+  color: #000;
   letter-spacing: 1px;
   margin: 0;
-  text-shadow: 2px 1px 10px black;
   font-family: "Quicksand", sans-serif;
 }
 
 h2 {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 4rem;
   margin-top: 30px;
 }
@@ -215,7 +215,7 @@ h2 {
   align-items: center;
   border-radius: 10%;
   border: none;
-  background-color: #aa3737;
+  background-color: #000;
   font-weight: bold;
   font-size: 1.8rem;
   color: white;
@@ -223,16 +223,16 @@ h2 {
 }
 @keyframes glowing {
   0% {
-    background-color: #aa3737;
-    box-shadow: 0 0 3px #aa3737;
+    background-color: #000;
+    box-shadow: 0 0 3px #000;
   }
   50% {
-    background-color: #aa3737;
-    box-shadow: 0 0 20px #aa3737;
+    background-color: #000;
+    box-shadow: 0 0 20px #000;
   }
   100% {
-    background-color: #aa3737;
-    box-shadow: 0 0 3px #aa3737;
+    background-color: #000;
+    box-shadow: 0 0 3px #000;
   }
 }
 
@@ -240,7 +240,7 @@ h2 {
   margin-top: 150px;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #fff;
   width: 60%;
 }
 .section-container section {
@@ -300,6 +300,7 @@ h2 {
   font-weight: bold;
   position: relative;
   top: -20px;
+  color: #000;
 }
 .about-me-image {
   border-radius: 100%;
@@ -316,7 +317,7 @@ h2 {
   overflow: visible;
 }
 .progress-bar {
-  background-color: #fff;
+  background-color: #98f5e1;
   border-radius: 10px;
   animation: animate 1.2s ease-in;
   position: relative;
@@ -335,6 +336,7 @@ h3.progress-title {
   font-size: 2.5rem;
   text-align: left;
   margin-bottom: 10px;
+  color: #fff;
 }
 @keyframes animate {
   0% {
@@ -395,8 +397,8 @@ h3.progress-title {
 }
 .link-button {
   font-size: 2rem;
-  background: royalblue;
-  color: white;
+  background: white;
+  color: #000;
   padding: 0.7em 1em;
   padding-left: 0.9em;
   display: flex;
@@ -447,6 +449,7 @@ h3.progress-title {
 
 .card-custom .card-header-custom .header-sizing {
   font-size: 3rem;
+  font-weight: bold;
 }
 .card-custom .card-header-custom .span {
   height: 25px;
@@ -466,6 +469,7 @@ h3.progress-title {
   letter-spacing: 0.5px;
   color: white;
   background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 5px;
 }
 .card-custom .card-body-custom {
   display: none;
@@ -523,7 +527,7 @@ h3.progress-title {
 .group hr {
   margin: 20px auto;
   width: 45%;
-  color: #fff;
+  color: #000;
   opacity: 0.8;
 }
 .about-hr,
@@ -531,15 +535,15 @@ h3.progress-title {
   width: 90vw;
   position: relative;
   left: -55%;
-  color: #fff;
-  opacity: 0.8;
+  color: #000;
+  opacity: 0.4;
 }
 .skills-hr {
   width: 90vw;
   position: relative;
   left: 5%;
-  color: #fff;
-  opacity: 0.8;
+  color: #000;
+  opacity: 0.4;
 }
 
 .about-container {
@@ -597,6 +601,23 @@ footer i:hover {
   top: 70px;
   cursor: pointer;
   z-index: 500;
+  animation: pulse-black 1s infinite;
+}
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 .shift {
   background: rgb(9, 7, 28);
@@ -606,6 +627,9 @@ footer i:hover {
     rgba(4, 4, 9, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
+}
+.shift .section-container h3 {
+  color: #fff;
 }
 .shift #icon {
   color: #000;
@@ -630,6 +654,23 @@ footer i:hover {
 }
 .shift .dark {
   background: gray;
+  animation: pulse-gray 1s infinite;
+}
+@keyframes pulse-gray {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  }
 }
 .shift .link li .link-tag:hover {
   font-weight: bold;
@@ -667,12 +708,14 @@ footer i:hover {
   background-color: royalblue;
   animation: glowing-dark 1000ms infinite;
 }
-
+.shift .group hr {
+  background-color: gray;
+}
 .shift .skills-hr,
 .shift .about-hr,
 .shift .projects-hr {
   background-color: gray;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .shift #about-me-para,
 .shift #intern-para {
@@ -698,7 +741,7 @@ footer i:hover {
 }
 @media (max-width: 768px) {
   body {
-    background-image: url("images/fin-mobile.jpg");
+    background: linear-gradient(to right, #fde4cf, #ffcfd2);
   }
   .menu-container .wrapper {
     background-color: rgba(255, 255, 255, 0.95);
@@ -734,8 +777,6 @@ footer i:hover {
   }
   .group h2 {
     font-size: 3rem;
-    position: relative;
-    color: rgba(255, 255, 255, 0.6);
   }
   .group .a {
     color: white;
@@ -768,9 +809,10 @@ footer i:hover {
 
   #accordion-custom .card-custom .card-body-custom {
     font-size: 1.8rem;
+    padding: 0 auto;
     width: 115%;
     position: relative;
-    right: 18px;
+    right: 20px;
   }
   .card-custom .card-header-custom .header-sizing {
     font-size: 2rem;
@@ -778,6 +820,9 @@ footer i:hover {
   .link-button {
     padding: 15px;
     height: 35px;
+  }
+  .link-button span {
+    font-size: 1.8rem;
   }
   .card {
     width: 100%;
