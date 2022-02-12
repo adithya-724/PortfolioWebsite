@@ -476,17 +476,20 @@ h2 {
 .group hr {
   margin: 20px auto;
   width: 45%;
+  color: #fff;
 }
 .about-hr,
 .projects-hr {
   width: 90vw;
   position: relative;
   left: -55%;
+  color: #fff;
 }
 .skills-hr {
   width: 90vw;
   position: relative;
   left: 5%;
+  color: #fff;
 }
 
 .about-container {
