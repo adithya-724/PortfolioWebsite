@@ -66,15 +66,17 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 //accordion
 
 $(document).ready(function () {
-  $(".card-header").click(function () {
+  $(".card-header-custom").click(function () {
     // self clicking close
-    if ($(this).next(".card-body").hasClass("active")) {
-      $(this).next(".card-body").removeClass("active").slideUp();
+    if ($(this).next(".card-body-custom").hasClass("active")) {
+      $(this).next(".card-body-custom").removeClass("active").slideUp();
       $(this).children("span").removeClass("fa-minus").addClass("fa-plus");
     } else {
-      $(".card .card-body").removeClass("active").slideUp();
-      $(".card .card-header span").removeClass("fa-minus").addClass("fa-plus");
-      $(this).next(".card-body").addClass("active").slideDown();
+      $(".card-custom .card-body-custom").removeClass("active").slideUp();
+      $(".card-custom .card-header-custom span")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this).next(".card-body-custom").addClass("active").slideDown();
       $(this).children("span").removeClass("fa-plus").addClass("fa-minus");
     }
   });

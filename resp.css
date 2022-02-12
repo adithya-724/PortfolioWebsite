@@ -6,12 +6,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Asap Condensed", sans-serif;
 }
 html,
 body {
   overflow-x: hidden;
   font-size: 62.5%;
+  font-family: "Asap Condensed", sans-serif;
 }
 body {
   background-image: url("images/final.jpg");
@@ -182,7 +182,8 @@ ul li .link-tag:hover {
 }
 
 h1 {
-  font-size: 6.5rem;
+  font-size: 6rem;
+  font-weight: bold;
   color: white;
   letter-spacing: 1px;
   margin: 0;
@@ -235,14 +236,8 @@ h2 {
   }
 }
 
-/* .magic-button:hover {
-  background-color: #aa3737;
-  box-shadow: 0 0 10px #aa3737, 0 0 20px #aa3737, 0 0 30px #aa3737;
-} */
-
 .section-container {
   margin-top: 150px;
-  clear: both;
   margin: 0 auto;
   text-align: center;
   color: white;
@@ -314,6 +309,43 @@ h2 {
   align-items: center;
   justify-content: space-around;
 }
+.progress {
+  background-color: #000;
+  height: 12px;
+  border-radius: 10px;
+  overflow: visible;
+}
+.progress-bar {
+  background-color: #fff;
+  animation: animate 1.2s ease-in;
+  position: relative;
+  overflow: visible;
+  opacity: 1;
+}
+
+.shift .progress-bar {
+  background-color: royalblue;
+}
+h3.progress-title {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+}
+.progress-value {
+  color: #000;
+  position: absolute;
+  top: -32px;
+  right: 0;
+}
+.progress-value h6 {
+  font-size: 2rem;
+  color: #fff;
+}
 .icons-container {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
@@ -322,12 +354,12 @@ h2 {
   color: white;
   border-radius: 10px;
 }
-.accordian .card {
+.accordian-custom .card-custom {
   margin-bottom: 20px;
   float: left;
   width: 100%;
 }
-.card-header {
+.card-header-custom {
   cursor: pointer;
   position: relative;
   background-color: rgba(119, 119, 119, 0.45);
@@ -348,7 +380,6 @@ h2 {
   color: #fff;
 }
 .link-button {
-  font-family: inherit;
   font-size: 2rem;
   background: royalblue;
   color: white;
@@ -400,10 +431,10 @@ h2 {
   }
 }
 
-.card .card-header .header-sizing {
+.card-custom .card-header-custom .header-sizing {
   font-size: 3rem;
 }
-.card .card-header .span {
+.card-custom .card-header-custom .span {
   height: 25px;
   width: 25px;
   color: #3343a2;
@@ -413,7 +444,7 @@ h2 {
   line-height: 25px;
   font-size: 1.3rem;
 }
-.card-body {
+.card-body-custom {
   font-size: 2.5rem;
   padding: 30px;
   margin-bottom: 10px;
@@ -421,13 +452,12 @@ h2 {
   letter-spacing: 0.5px;
   color: white;
   background-color: rgba(0, 0, 0, 0.65);
-  font-family: "Oswald", sans-serif;
 }
-.card .card-body {
+.card-custom .card-body-custom {
   display: none;
 }
 /*open one card by default*/
-.card:nth-child(1) .card-body {
+.card-custom:nth-child(1) .card-body-custom {
   display: block;
 }
 .icons {
@@ -477,6 +507,7 @@ h2 {
   margin: 20px auto;
   width: 45%;
   color: #fff;
+  opacity: 0.8;
 }
 .about-hr,
 .projects-hr {
@@ -484,12 +515,14 @@ h2 {
   position: relative;
   left: -55%;
   color: #fff;
+  opacity: 0.8;
 }
 .skills-hr {
   width: 90vw;
   position: relative;
   left: 5%;
   color: #fff;
+  opacity: 0.8;
 }
 
 .about-container {
@@ -618,8 +651,11 @@ footer i:hover {
   animation: glowing-dark 1000ms infinite;
 }
 
-.shift hr {
-  border: 1px solid rgba(255, 255, 255, 0.45);
+.shift .skills-hr,
+.shift .about-hr,
+.shift .projects-hr {
+  background-color: gray;
+  opacity: 0.6;
 }
 .shift #about-me-para,
 .shift #intern-para {
@@ -684,9 +720,6 @@ footer i:hover {
     position: relative;
     color: rgba(255, 255, 255, 0.6);
   }
-  h3 {
-    font-size: 3rem !important;
-  }
   .group .a {
     color: white;
   }
@@ -694,6 +727,7 @@ footer i:hover {
     transform: translateX(-20%);
     margin-top: 40px;
   }
+
   #word-container .pos {
     display: none;
   }
@@ -715,13 +749,13 @@ footer i:hover {
     line-height: 2.5rem;
   }
 
-  #accordion .card .card-body {
+  #accordion-custom .card-custom .card-body-custom {
     font-size: 1.8rem;
     width: 115%;
     position: relative;
     right: 18px;
   }
-  .card .card-header .header-sizing {
+  .card-custom .card-header-custom .header-sizing {
     font-size: 2rem;
   }
   .link-button {
@@ -739,5 +773,15 @@ footer i:hover {
   }
   .dark {
     top: 1vh;
+  }
+  .progress {
+    height: 9px;
+  }
+  .section-container h3 {
+    font-size: 2.5rem;
+  }
+  h3.progress-title {
+    font-size: 2rem;
+    font-weight: normal;
   }
 }
