@@ -134,11 +134,15 @@ ul li .link-tag:hover {
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 1);
-  width: 20px;
   border-radius: 50%;
-  padding: 7px;
+  padding: 5px;
+}
+#icon i {
+  margin-left: 4px;
 }
 .rotate {
   transform: rotate(-180deg);
@@ -185,9 +189,7 @@ h1 {
   text-shadow: 2px 1px 10px black;
   font-family: "Quicksand", sans-serif;
 }
-hr {
-  width: 400px;
-}
+
 h2 {
   color: rgba(255, 255, 255, 0.9);
   font-size: 4rem;
@@ -471,11 +473,22 @@ h2 {
 .intern-images {
   margin-top: 20px;
 }
-
-hr {
+.group hr {
   margin: 20px auto;
   width: 45%;
 }
+.about-hr,
+.projects-hr {
+  width: 90vw;
+  position: relative;
+  left: -55%;
+}
+.skills-hr {
+  width: 90vw;
+  position: relative;
+  left: 5%;
+}
+
 .about-container {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 20px 60px;
@@ -542,20 +555,23 @@ footer i:hover {
   );
 }
 .shift #icon {
-  /* display: none; */
-  font-size: 10px;
-  color: #15141d;
+  color: #000;
   position: relative;
   top: 30vh;
   cursor: pointer;
   margin-left: 10px;
   transition: 0.5s ease;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: gray;
-  width: 20px;
   border-radius: 50%;
-  padding: 7px;
+  padding: 5px;
 }
+#icon i {
+  margin-left: 4px;
+}
+
 .shift .letter:hover {
   color: royalblue;
 }
@@ -651,21 +667,22 @@ footer i:hover {
     font-size: 4rem;
     float: none;
   }
-  .group {
-    position: relative;
-    right: 30px;
+  #word-container {
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 50px;
+    text-align: left;
   }
   .shift .group h1 {
-    width: 70vw;
     font-size: 4rem;
-    float: none;
   }
   .group h2 {
-    width: 70vw;
     font-size: 3rem;
-    float: none;
     position: relative;
     color: rgba(255, 255, 255, 0.6);
+  }
+  h3 {
+    font-size: 3rem !important;
   }
   .group .a {
     color: white;
@@ -674,7 +691,7 @@ footer i:hover {
     transform: translateX(-20%);
     margin-top: 40px;
   }
-  .menu-container .software {
+  #word-container .pos {
     display: none;
   }
   .intern-container {
