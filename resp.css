@@ -322,7 +322,11 @@ h2 {
   overflow: visible;
   opacity: 1;
 }
-
+.progress-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 .shift .progress-bar {
   background-color: royalblue;
 }
@@ -354,10 +358,19 @@ h3.progress-title {
   color: white;
   border-radius: 10px;
 }
+.icons-container img {
+  height: 50px;
+  width: 50px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
 .accordian-custom .card-custom {
   margin-bottom: 20px;
   float: left;
   width: 100%;
+}
+.card-custom img {
+  margin-top: 10px;
 }
 .card-header-custom {
   cursor: pointer;
